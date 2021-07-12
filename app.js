@@ -738,6 +738,51 @@ $(".player").on("click", function(event) {
     } 
 })
 
+/*$(".remove").on("click", function(event) {
+    event.preventDefault();
+    if (playerCount[currentTeam - 1] > 0) {
+        playerCount[currentTeam - 1]--;
+        var index = teamPlayers[currentTeam - 1].pop();
+        teamPlayers[currentTeam - 1].pop();
+        $(totals[currentTeam - 1]).empty();
+        pitchingTotal[currentTeam - 1] = pitchingTotal[currentTeam - 1] - data[index].pitching;
+        battingTotal[currentTeam - 1] = battingTotal[currentTeam - 1] - data[index].batting;
+        fieldingTotal[currentTeam - 1] = fieldingTotal[currentTeam - 1] - data[index].fielding;
+        runningTotal[currentTeam - 1] = runningTotal[currentTeam - 1] - data[index].running;
+        chemScore[currentTeam - 1] = chemCalc(teamPlayers[currentTeam - 1]);
+        totalTotal[currentTeam - 1] = totalTotal[currentTeam - 1] - data[index].pitching - data[index].batting - data[index].fielding - data[index].running;
+        $(totals[currentTeam - 1]).append("Players: " + playerCount[currentTeam - 1] + "<br>" + "Pitching: " + pitchingTotal[currentTeam - 1] + "<br>" + "Batting: " + battingTotal[currentTeam - 1] + "<br>" + "Fielding: " + fieldingTotal[currentTeam - 1] + "<br>" + "Running: " + runningTotal[currentTeam - 1] + "<br>" + "Composite: " + totalTotal[currentTeam - 1] + "<br>" + "Chemistry Score: " + chemScore[currentTeam - 1]);
+        data[index].toggle = false;
+        $(".player")[index].css("opacity", "1.0");
+    }
+})*/
+
+$(".remove").on("click", function(event) {
+    event.preventDefault();
+    $(totals[currentTeam - 1]).empty();
+    $(lists[currentTeam - 1]).empty();
+    $(lists[currentTeam - 1]).append("<span>" + 'Squad:' + "<br>" + "</span>");
+    playerCount[currentTeam - 1] = 0;
+    pitchingTotal[currentTeam - 1] = 0;
+    battingTotal[currentTeam - 1] = 0;
+    fieldingTotal[currentTeam - 1] = 0;
+    runningTotal[currentTeam - 1] = 0;
+    chemScore[currentTeam - 1] = 0;
+    totalTotal[currentTeam - 1] = 0;
+    $(totals[currentTeam - 1]).append("Players: " + playerCount[currentTeam - 1] + "<br>" + "Pitching: " + pitchingTotal[currentTeam - 1] + "<br>" + "Batting: " + battingTotal[currentTeam - 1] + "<br>" + "Fielding: " + fieldingTotal[currentTeam - 1] + "<br>" + "Running: " + runningTotal[currentTeam - 1] + "<br>" + "Composite: " + totalTotal[currentTeam - 1] + "<br>" + "Chemistry Score: " + chemScore[currentTeam - 1]);
+    for (var i = 0; i < teamPlayers[currentTeam - 1].length; i++) {
+        var index = teamPlayers[currentTeam - 1][i];
+        data[index].toggle = false;
+        $(".player").each(function () {
+            var $this = $(this);
+            var index2 = $(".player").index(this);
+            if (index === index2) {
+                $this.css("opacity", "1.0");
+            }
+        })
+    }
+})
+
 var chemCalc = function(team) {
     var final = 0;
     for (var i = 0; i < team.length; i++) {
@@ -749,3 +794,4 @@ var chemCalc = function(team) {
     }
     return final / 2;
 }
+
