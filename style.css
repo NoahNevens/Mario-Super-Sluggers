@@ -1,0 +1,574 @@
+body {
+    background: linear-gradient(120deg, rgb(243, 167, 167), rgb(199, 238, 166));
+}
+
+/* #selection {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 72vw;
+    height: 72vw;
+    background-color: rgb(216, 151, 151);
+} */
+
+.title {
+    font-size: 3vw;
+    color: black;
+    width: 100%; 
+    text-align: center;
+    text-shadow: 0.14vw 0.14vw 0.28vw #0000006c;
+    font-family: 'Nunito', sans-serif;
+}
+
+.player {
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    display: inline-block;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 0.7vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.2vw;
+}
+
+.teamButtonPage {
+    position: absolute;
+    display: inline-block;
+    background: white;
+    margin: 2vw;
+    max-width: 20vw;
+    max-height: 11vw;
+    padding: 1vw;
+    border: ridge gray 0.3vw;
+}
+
+.teamButtons {
+    margin: 0.04vw;
+    margin-bottom: 0.25vw;
+    color: white;
+    border-radius: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    font-size: 0.9vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+.teamDrafts {
+    position: absolute;
+    display: none;
+    background: white;
+    width: 19.7vw;
+    height: 34vw;
+    padding: 1vw;
+    z-index: 1;
+}
+
+.teamDrafts h1 {
+    font-size: 2vw;
+}
+
+#team1Button { background-color: pink; }
+
+#team2Button { background-color: blueviolet; }
+
+#team3Button { background-color: brown;}
+
+#team4Button { background-color: cadetblue; }
+
+#team5Button { background-color: green; }
+
+#team6Button { background-color: rgb(189, 189, 121); }
+
+#team7Button { background-color: red; }
+
+#team8Button { background-color: lightblue; }
+
+#team1Draft {
+    color: pink;
+    border: ridge pink 0.3vw;
+}
+
+#team2Draft {
+    color: blueviolet;
+    border: ridge blueviolet 0.3vw;
+}
+
+#team3Draft {
+    color: brown;
+    border: ridge brown 0.3vw;
+}
+
+#team4Draft {
+    color: cadetblue;
+    border: ridge cadetblue 0.3vw;
+}
+
+#team5Draft {
+    color: green;
+    border: ridge green 0.3vw;
+}
+
+#team6Draft {
+    color: rgb(189, 189, 121);
+    border: ridge rgb(189, 189, 121) 0.3vw;
+}
+
+#team7Draft {
+    color: red;
+    border: ridge red 0.3vw;
+}
+
+#team8Draft {
+    color: lightblue;
+    border: ridge lightblue 0.3vw;
+}
+
+.teamDrafts h1 {
+    text-align: center;
+}
+
+.list {
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    z-index: 2;
+}
+
+.list span {
+    font-weight: bold;
+    color: black;
+}
+
+.totals { 
+    font-size: 0.82vw;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+.remove {
+    color: white;
+    border-radius: 0.7vw;
+    position: absolute;
+    z-index: 2;
+    width: 3.5vw;
+    height: 2vw;
+    font-size: 0.9vw;
+}
+
+#remove1 {
+    background-color: pink;
+}
+
+#remove2 {
+    background-color: blueviolet;
+}
+
+#remove3 {
+    background-color: brown;
+}
+
+#remove4 {
+    background-color: cadetblue;
+}
+
+#remove5 {
+    background-color: green;
+}
+
+#remove6 {
+    background-color: rgb(189, 189, 121);
+}
+
+#remove7 {
+    background-color: red;
+}
+
+#remove8 {
+    background-color: lightblue;
+}
+
+#mario {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://images-na.ssl-images-amazon.com/images/G/01/videogames/detail-page/B001APM444.01.sm.jpg);
+    background-size: cover;
+}
+
+#luigi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.pngitem.com/pimgs/m/106-1067119_luigi-superstar-mario-mario-super-sluggers-luigi-hd.png);
+    background-size: cover;
+}
+
+#peach {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.videogamesblogger.com/wp-content/uploads/2008/09/mario-super-sluggers-peach-artwork-big.jpg);
+    background-size: cover;
+}
+
+#daisy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/we-are-daisy/images/d/d3/D6371.png/revision/latest?cb=20160320124159);
+    background-size: 95% 95%;
+}
+
+#yoshi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(http://images2.fanpop.com/image/polls/482000/482909_1278287386369_full.jpg);
+    background-size: cover;
+}
+
+#birdo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/birdo/images/b/b0/Birdoslugguh.png/revision/latest/scale-to-width-down/250?cb=20090829001434);
+    background-size: cover;
+}
+
+#wario {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/f/f0/Wario_MSS_artwork.jpg/120px-Wario_MSS_artwork.jpg);
+    background-size: cover;
+}
+
+#waluigi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://pbs.twimg.com/media/ECskv7uVUAI-4kv.jpg);
+    background-size: cover;
+}
+
+#donkeyKong {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/5/5b/DK_MSS_artwork.jpg/120px-DK_MSS_artwork.jpg);
+    background-size: cover;
+}
+
+#diddyKong {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://i.pinimg.com/600x315/89/20/d4/8920d4b21c6191941ea5ebc4062c3717.jpg);
+    background-size: cover;
+}
+
+#bowser {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/d1/Bowser_MSS.jpg/113px-Bowser_MSS.jpg);
+    background-size: cover;
+}
+
+#bowserJr {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/6/6b/Bowser_Jr_MSS.jpg/120px-Bowser_Jr_MSS.jpg);
+    background-size: cover;
+}
+
+#babyMario {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/5/58/BabyMarioSluggers.png/75px-BabyMarioSluggers.png);
+    background-size: 75% 95%;
+}
+
+#babyLuigi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/d7/Baby_Luigi_MSS_artwork.png/73px-Baby_Luigi_MSS_artwork.png);
+    background-size: 75% 95%;
+}
+
+#babyPeach {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/2/20/Babypeachsimple.png/85px-Babypeachsimple.png);
+    background-size: 75% 95%;
+}
+
+#babyDaisy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/6/65/Babydaisysimple.png/76px-Babydaisysimple.png);
+    background-size: 75% 95%;
+}
+
+#babyDK {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/7/77/BDKSluggers.PNG/90px-BDKSluggers.PNG);
+    background-size: 75% 95%;
+}
+
+#toad {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/9/93/Red_Toad_MSS.PNG/75px-Red_Toad_MSS.PNG);
+    background-size: 75% 95%;
+}
+
+#toadette {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/da/Toadette111.png/100px-Toadette111.png);
+    background-size: 75% 95%;
+}
+
+#toadsworth {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/5/5b/SMS_Toadsworth_Artwork.png/73px-SMS_Toadsworth_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#bluePianta {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/7/71/MSS_Pianta_Artwork.png/120px-MSS_Pianta_Artwork.png);
+    background-size: 80% 95%;
+}
+
+#blueNoki {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/3/32/MSS_Blue_Noki_Artwork.png/102px-MSS_Blue_Noki_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#dixieKong {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/0/0f/Dixie_Kong_DKJC_artwork.png/112px-Dixie_Kong_DKJC_artwork.png);
+    background-size: 75% 95%;
+}
+
+#funkyKong {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/7/70/Funky_Kong_-_DK_Jungle_Climber.png/76px-Funky_Kong_-_DK_Jungle_Climber.png);
+    background-size: 75% 105%;
+}
+
+#tinyKong {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/8/81/Tiny_Kong_MSS_art.png/82px-Tiny_Kong_MSS_art.png);
+    background-size: 75% 95%;
+}
+
+#kingKRool {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/f/f2/MSS_King_K_Rool_Artwork.png/97px-MSS_King_K_Rool_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#kritter {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/d1/Kritter_Mario_Super_Sluggers.png/120px-Kritter_Mario_Super_Sluggers.png);
+    background-size: 75% 95%;
+}
+
+#goomba {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/8/86/NSMBDS_Goomba_Artwork.png/100px-NSMBDS_Goomba_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#paragoomba {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/f/f0/MSSParagomba.PNG/112px-MSSParagomba.PNG);
+    background-size: 75% 95%;
+}
+
+#greenKoopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/e/ee/NSMB_Green_Koopa_Troopa_Artwork.png/75px-NSMB_Green_Koopa_Troopa_Artwork.png);
+    background-size: 70% 95%;
+}
+
+#redParatroopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/8/86/Paratroopa_NSMB_artwork.png/99px-Paratroopa_NSMB_artwork.png);
+    background-size: 75% 95%;
+}
+
+#magikoopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/9/96/Magikoopa_Artwork_-_Super_Mario_Galaxy.png/120px-Magikoopa_Artwork_-_Super_Mario_Galaxy.png);
+    background-size: 75% 95%;
+}
+
+#hammerBro {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/4/4c/MP8_Hammer_Bro_Artwork.png/99px-MP8_Hammer_Bro_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#dryBones {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/9/94/MP8_DryBones.png/102px-MP8_DryBones.png);
+    background-size: 75% 95%;
+}
+
+#boo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/c/c7/BooMP8Official.png/120px-BooMP8Official.png);
+    background-size: 80% 95%;
+}
+
+#kingBoo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/a/a9/King_Boo_Artwork_MSS.png/120px-King_Boo_Artwork_MSS.png);
+    background-size: 75% 95%;
+}
+
+#peteyPiranha {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/e/e8/PeteySluggers.png/99px-PeteySluggers.png);
+    background-size: 75% 95%;
+}
+
+#wiggler {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/8/84/Wiggler-MSS.jpg/95px-Wiggler-MSS.jpg);
+    background-size: 75% 95%;
+}
+
+#shyGuy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/3/33/MSS_Red_Shy_Guy_Artwork.png/102px-MSS_Red_Shy_Guy_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#montyMole {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/4/4b/Monty_Mole_Super_Sluggers.png/120px-Monty_Mole_Super_Sluggers.png);
+    background-size: 84% 95%;
+}
+
+#blooper {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/e/e1/MP8_Blooper.png/92px-MP8_Blooper.png);
+    background-size: 75% 95%;
+}
+
+#redYoshi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.kindpng.com/picc/m/24-243591_super-mario-png-red-yoshi-transparent-png.png);
+    background-size: 88% 95%;
+}
+
+#blueYoshi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/over1000/images/2/2c/Dark_Blue_Yoshi.JPEG/revision/latest?cb=20180708205117);
+    background-size: 77% 95%;
+}
+
+#yellowYoshi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.kindpng.com/picc/m/629-6298210_yellow-yoshi-from-mario-hd-png-download.png);
+    background-size: 80% 95%;
+}
+
+#lightBlueYoshi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(data:image/jpeg;base64,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bSD2Z+OW2oDh9xvO+p3WG9dhuvisScRe5tmi3XUqeSuc4WaLfdAERFnqiiIiIiIiIiIiItTtLgMVbCYZLjUOa5tszHDS4vv0JBHVcn2x2GZRiI9q5+dz812hos0NIFgTrrzXblUvaXhjpqTOwEuhd2lhvLLEPt4Ah36VfoKgslaxx7JOYVyjlLZGtcezfMLlBfZYJp1gdOttgOCdqDNM7s4G7zxkI+6z6nh4r0VbXw0sRlldZo8+QGpJ2AXo5Jg0XKwYLgklS465Y2/4kh+Fg32HN3T1srxguE9u37PSgxUrT72Y/HM7iGni489w8LAyMEwZ1YGjKYKJnwsGjp7c+nN3HqdRf6eBrGhjGhrWizWgWAHReCqJ5+KvEk4wxA3aznyc+2p5DRu1z2jgVVYX5N0WLDqCOCMRRNDWjhxJ4kniTzUlEVsAAWCz0REX1ERERERERERERERERERERERERERERERERERERERERERERFznab2bQueainzNF80kDQCHi93CM72H+nXpZbDBNlHSFslW0NjZbsqYfC0Ddnt/p9eIV2RRzx/Hex8pJw6A6C+9ue1+WSmdPI5uElfALaDQDd0X1EUihREREREREREREREREREREREREX//2Q==);
+    background-size: 75% 95%;
+}
+
+#pinkYoshi {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/hello-yoshi/images/2/2d/Deluxe_Pinkie_Yoshi.png/revision/latest?cb=20190402191531);
+    background-size: 75% 95%;
+}
+
+#blueToad {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.seekpng.com/png/detail/9-91736_blue-toad-png-mushroom-super-mario-kart.png);
+    background-size: 75% 95%;
+}
+
+#yellowToad {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/da/NSMBW_Yellow_Toad_Jumping_Artwork.png/170px-NSMBW_Yellow_Toad_Jumping_Artwork.png);
+    background-size: 75% 95%;
+}
+
+#greenToad {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.seekpng.com/png/detail/910-9106479_665-x-1001-3-super-mario-green-toad.png);
+    background-size: 75% 95%;
+}
+
+#purpleToad {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/yunas-princess-adventure/images/d/d8/Purple_Toad.png/revision/latest?cb=20170722071719);
+    background-size: 75% 95%;
+}
+
+#redPianta {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/0/09/PiantaPink_MSS.png/100px-PiantaPink_MSS.png);
+    background-size: 75% 95%;
+}
+
+#yellowPianta {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/5/56/PiantaYellow_MSS.png/100px-PiantaYellow_MSS.png);
+    background-size: 75% 95%;
+}
+
+#redNoki {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(data:image/jpeg;base64,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);
+    background-size: 75% 95%;
+}
+
+#greenNoki {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(data:image/jpeg;base64,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);
+    background-size: 75% 95%;
+}
+
+#blueKritter {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://ssb.wiki.gallery/images/thumb/3/32/MSS_Blue_Kritter.png/150px-MSS_Blue_Kritter.png);
+    background-size: 75% 95%;
+}
+
+#redKritter {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/0/01/KritterRed-MSS.png/100px-KritterRed-MSS.png);
+    background-size: 75% 95%;
+}
+
+#brownKritter {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/7/7d/KritterBrown-MSS.png/100px-KritterBrown-MSS.png);
+    background-size: 75% 95%;
+}
+
+#redKoopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Koopa_Troopa_NSMBU.png/220px-Koopa_Troopa_NSMBU.png);
+    background-size: 75% 95%;
+}
+
+#greenParatroopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/super-mario-world2/images/4/45/Koopa_Paratroopa.jpg/revision/latest?cb=20160107022328);
+    background-size: 75% 95%;
+}
+
+#redMagikoopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/3/38/Red_magic_koopa..png/revision/latest/scale-to-width-down/250?cb=20120815212709);
+    background-size: 75% 95%;
+}
+
+#greenMagikoopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/the-ultimate-crossover/images/6/6b/Green_Magikoopa_New.png/revision/latest/scale-to-width-down/2586?cb=20200321015211);
+    background-size: 75% 95%;
+}
+
+#yellowMagikoopa {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/the-ultimate-crossover/images/d/db/Yellow_Magikoopa.png/revision/latest/scale-to-width-down/2586?cb=20200321015445);
+    background-size: 75% 95%;
+}
+
+#fireBro {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://oyster.ignimgs.com/mediawiki/apis.ign.com/new-super-mario-bros-u/3/3b/FireBro.png);
+    background-size: 75% 95%;
+}
+
+#boomerangBro {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://oyster.ignimgs.com/mediawiki/apis.ign.com/super-mario-3d-land/3/38/BoomerangBro.png);
+    background-size: 75% 95%;
+}
+
+#greenDryBones {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(http://vignette1.wikia.nocookie.net/fantendo/images/0/0b/Green_Dry_Bones.png/revision/latest?cb=20100406110002);
+    background-size: 75% 95%;
+}
+
+#darkBones {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/goanimate-v2/images/1/1d/Dark_Bones_-_Mario_Kart_Wii.png/revision/latest?cb=20170814174907);
+    background-size: 75% 95%;
+}
+
+#blueDryBones {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.pngkit.com/png/detail/417-4171121_acl-mk8-blue-dry-bone-mario-party-star.png);
+    background-size: 75% 95%;
+}
+
+#blueShyGuy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/8/8d/ACL_MK8_Blue_Shy_Guy.png/revision/latest/scale-to-width-down/250?cb=20170123000342);
+    background-size: 75% 95%;
+}
+
+#yellowShyGuy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.seekpng.com/png/detail/105-1052460_yellow-shy-guy-shy-guy.png);
+    background-size: 75% 95%;
+}
+
+#greenShyGuy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/1/16/ACL_MK8_Green_Shy_Guy.png/revision/latest/scale-to-width-down/250?cb=20170123000105);
+    background-size: 75% 95%;
+}
+
+#grayShyGuy {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.vippng.com/png/detail/109-1093533_737kib-1400x1436-black-guy-shy-guy.png);
+    background-size: 75% 95%;
+}
+
+#mii {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/w__/images/2/28/HEYimHeroic_3DS_FACE-010_Haru.JPG/revision/latest?cb=20200611150649&path-prefix=wiisports);
+    background-size: 75% 95%;
+}
+
+
+.player h1 {
+    font-size: 0.875vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.player .name {
+    font-size: 1vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.player .info {
+    font-size: 0.625vw;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+}
+
+.player:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
