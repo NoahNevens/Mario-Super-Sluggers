@@ -224,7 +224,7 @@ body {
 
 #birdo {
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/db/Birdo_MSS_artwork.jpg/120px-Birdo_MSS_artwork.jpg);
-    background-size: 90% 100%;
+    background-size: 90% 107%;
 }
 
 #wario {
@@ -443,7 +443,7 @@ body {
 }
 
 #purpleToad {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/d/d8/Purple_Toad.png/revision/latest/scale-to-width-down/250?cb=20100319020704);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://e7.pngegg.com/pngimages/630/183/png-clipart-mario-bros-toad-new-super-mario-bros-princess-peach-mario-bros-purple-super-mario-bros.png);
     background-size: 75% 95%;
 }
 
