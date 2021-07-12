@@ -660,7 +660,7 @@ var lists = ["#one", "#two", "#three", "#four", "#five", "#six", "#seven", "#eig
 var totals = ["#total1", "#total2", "#total3", "#total4", "#total5", "#total6", "#total7", "#total8"];
 
 var chemScore = [0, 0, 0, 0, 0, 0, 0, 0];
-var teamPlayers = [[], [], [], [], [], [], [], []];
+var teamPlayers = [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]];
 
 $("#team1Button").on("click", function(event) {
     event.preventDefault();
@@ -723,7 +723,7 @@ $(".player").on("click", function(event) {
     var index = $(".player").index(this);
     if (data[index].toggle === false) {
         $(lists[currentTeam - 1]).append(data[index].name + "<br>");
-        teamPlayers[currentTeam - 1].push(index);
+        teamPlayers[currentTeam - 1][playerCount[currentTeam - 1]] = index;
         playerCount[currentTeam - 1]++;
         $(this).css("opacity", "0.25");
         $(totals[currentTeam - 1]).empty();
