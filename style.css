@@ -54,11 +54,19 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+@media screen and (max-width: 1145px) {
+    .teamButtons {
+        width: 2vw;
+        height: 2.5vw;
+        font-size: 0.4vw;
+    }
+}
+
 .teamDrafts {
     position: absolute;
     display: none;
     background: white;
-    width: 19.7vw;
+    width: 20vw;
     height: 34vw;
     padding: 1vw;
     z-index: 1;
@@ -205,7 +213,7 @@ body {
 }
 
 #daisy {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/we-are-daisy/images/d/d3/D6371.png/revision/latest?cb=20160320124159);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/5/55/Daisy_MSS_artwork.jpg/120px-Daisy_MSS_artwork.jpg);
     background-size: 95% 95%;
 }
 
@@ -215,8 +223,8 @@ body {
 }
 
 #birdo {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/birdo/images/b/b0/Birdoslugguh.png/revision/latest/scale-to-width-down/250?cb=20090829001434);
-    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/d/db/Birdo_MSS_artwork.jpg/120px-Birdo_MSS_artwork.jpg);
+    background-size: 90% 100%;
 }
 
 #wario {
@@ -400,7 +408,7 @@ body {
 }
 
 #blueYoshi {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/over1000/images/2/2c/Dark_Blue_Yoshi.JPEG/revision/latest?cb=20180708205117);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://i.pinimg.com/originals/2d/82/5d/2d825d814c5da0d00b2f33c3e40ff680.png);
     background-size: 77% 95%;
 }
 
@@ -415,7 +423,7 @@ body {
 }
 
 #pinkYoshi {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/hello-yoshi/images/2/2d/Deluxe_Pinkie_Yoshi.png/revision/latest?cb=20190402191531);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/p__/images/d/df/Pink_Yoshi.png/revision/latest/scale-to-width-down/250?cb=20170328223938&path-prefix=protagonist);
     background-size: 75% 95%;
 }
 
@@ -435,7 +443,7 @@ body {
 }
 
 #purpleToad {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/yunas-princess-adventure/images/d/d8/Purple_Toad.png/revision/latest?cb=20170722071719);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/d/d8/Purple_Toad.png/revision/latest/scale-to-width-down/250?cb=20100319020704);
     background-size: 75% 95%;
 }
 
@@ -480,22 +488,22 @@ body {
 }
 
 #greenParatroopa {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/super-mario-world2/images/4/45/Koopa_Paratroopa.jpg/revision/latest?cb=20160107022328);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://i.pinimg.com/originals/32/06/64/320664e8a184f12c0996517373367d90.png);
     background-size: 75% 95%;
 }
 
 #redMagikoopa {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/3/38/Red_magic_koopa..png/revision/latest/scale-to-width-down/250?cb=20120815212709);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/a/a1/MagikoopaRed_MSS.png/100px-MagikoopaRed_MSS.png);
     background-size: 75% 95%;
 }
 
 #greenMagikoopa {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/the-ultimate-crossover/images/6/6b/Green_Magikoopa_New.png/revision/latest/scale-to-width-down/2586?cb=20200321015211);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/a/ab/MagikoopaGreen_MSS.png/100px-MagikoopaGreen_MSS.png);
     background-size: 75% 95%;
 }
 
 #yellowMagikoopa {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/the-ultimate-crossover/images/d/db/Yellow_Magikoopa.png/revision/latest/scale-to-width-down/2586?cb=20200321015445);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://mario.wiki.gallery/images/thumb/b/b4/MagikoopaYellow_MSS.png/100px-MagikoopaYellow_MSS.png);
     background-size: 75% 95%;
 }
 
@@ -515,18 +523,18 @@ body {
 }
 
 #darkBones {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/goanimate-v2/images/1/1d/Dark_Bones_-_Mario_Kart_Wii.png/revision/latest?cb=20170814174907);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.pngarea.com/pngm/88/6941945_8-bit-mario-png-mario-dark-dry-bones.png);
     background-size: 75% 95%;
 }
 
 #blueDryBones {
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.pngkit.com/png/detail/417-4171121_acl-mk8-blue-dry-bone-mario-party-star.png);
-    background-size: 75% 95%;
+    background-size: 140% 110%;
 }
 
 #blueShyGuy {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/8/8d/ACL_MK8_Blue_Shy_Guy.png/revision/latest/scale-to-width-down/250?cb=20170123000342);
-    background-size: 75% 95%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.clipartmax.com/png/middle/348-3489661_clip-arts-related-to-shy-guy-mario.png);
+    background-size: 120% 100%;
 }
 
 #yellowShyGuy {
@@ -535,18 +543,18 @@ body {
 }
 
 #greenShyGuy {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/fantendo/images/1/16/ACL_MK8_Green_Shy_Guy.png/revision/latest/scale-to-width-down/250?cb=20170123000105);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.seekpng.com/png/detail/399-3999461_acl-mk8-green-shy-guy-green-shy-guy.png);
     background-size: 75% 95%;
 }
 
 #grayShyGuy {
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.vippng.com/png/detail/109-1093533_737kib-1400x1436-black-guy-shy-guy.png);
-    background-size: 75% 95%;
+    background-size: 85% 105%;
 }
 
 #mii {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://static.wikia.nocookie.net/w__/images/2/28/HEYimHeroic_3DS_FACE-010_Haru.JPG/revision/latest?cb=20200611150649&path-prefix=wiisports);
-    background-size: 75% 95%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://i.kym-cdn.com/entries/icons/original/000/028/261/Matt_CPU.jpg);
+    background-size: 110% 95%;
 }
 
 
