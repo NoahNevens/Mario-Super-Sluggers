@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, min"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Sluggers Draft</title>
+    </head>
+    <body>
+        <div class="title">Sluggers Draft</div>
+        <div class="player" id="mario" style="left: 7vw; top: 7vw;">
+            <h1><span class="name">Mario</span><br>Pitching: 6<br>Batting: 7<br>Fielding: 6<br>Running: 7</h1>
+        </div>
+        <div class="player" id="luigi" style="left: 14.1vw; top: 7vw;">
+            <h1><span class="name">Luigi</span><br>Pitching: 6<br>Batting: 6<br>Fielding: 7<br>Running: 7</h1>
+        </div>
+        <div class="player" id="peach" style="left: 21.2vw; top: 7vw;">
+            <h1><span class="name">Peach</span><br>Pitching: 9<br>Batting: 4<br>Fielding: 8<br>Running: 5</h1>
+        </div>
+        <div class="player" id="daisy" style="left: 28.3vw; top: 7vw;">
+            <h1><span class="name">Daisy</span><br>Pitching: 7<br>Batting: 6<br>Fielding: 8<br>Running: 5</h1>
+        </div>
+        <div class="player" id="yoshi" style="left: 35.4vw; top: 7vw;">
+            <h1><span class="name">Yoshi</span><br>Pitching: 4<br>Batting: 4<br>Fielding: 6<br>Running: 9</h1>
+        </div>
+        <div class="player" id="birdo" style="left: 42.5vw; top: 7vw;">
+            <h1><span class="name">Birdo</span><br>Pitching: 4<br>Batting: 8<br>Fielding: 7<br>Running: 5</h1>
+        </div>
+        <div class="player" id="wario" style="left: 49.6vw; top: 7vw;">
+            <h1><span class="name">Wario</span><br>Pitching: 5<br>Batting: 8<br>Fielding: 3<br>Running: 4</h1>
+        </div>
+        <div class="player" id="waluigi" style="left: 56.7vw; top: 7vw;">
+            <h1><span class="name">Waluigi</span><br>Pitching: 8<br>Batting: 4<br>Fielding: 8<br>Running: 5</h1>
+        </div>
+        <div class="player" id="donkeyKong" style="left: 63.8vw; top: 7vw;">
+            <h1><span class="name">Donkey Kong</span><br>Pitching: 6<br>Batting: 9<br>Fielding: 3<br>Running: 2</h1>
+        </div>
+        <div class="player" id="diddyKong" style="left: 7vw; top: 14.1vw;">
+            <h1><span class="name">Diddy Kong</span><br>Pitching: 5<br>Batting: 4<br>Fielding: 8<br>Running: 6</h1>
+        </div>
+        <div class="player" id="bowser" style="left: 14.1vw; top: 14.1vw;">
+            <h1><span class="name">Bowser</span><br>Pitching: 5<br>Batting: 10<br>Fielding: 3<br>Running: 3</h1>
+        </div>
+        <div class="player" id="bowserJr" style="left: 21.2vw; top: 14.1vw;">
+            <h1><span class="name">Bowser Jr.</span><br>Pitching: 5<br>Batting: 7<br>Fielding: 4<br>Running: 7</h1>
+        </div>
+        <div class="player" id="babyMario" style="left: 28.3vw; top: 14.1vw;">
+            <h1><span class="name">Baby Mario</span><br>Pitching: 5<br>Batting: 3<br>Fielding: 4<br>Running: 8<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="babyLuigi" style="left: 35.4vw; top: 14.1vw;">
+            <h1><span class="name">Baby Luigi</span><br>Pitching: 5<br>Batting: 2<br>Fielding: 5<br>Running: 8<br><span class="info">Super Jump</span></h1>
+        </div>
+        <div class="player" id="babyPeach" style="left: 42.5vw; top: 14.1vw;">
+            <h1><span class="name">Baby Peach</span><br>Pitching: 8<br>Batting: 2<br>Fielding: 5<br>Running: 6<br><span class="info">Quick Throw</span></h1>
+        </div>
+        <div class="player" id="babyDaisy" style="left: 49.6vw; top: 14.1vw;">
+            <h1><span class="name">Baby Daisy</span><br>Pitching: 6<br>Batting: 4<br>Fielding: 5<br>Running: 6<br><span class="info">Super Dive</span></h1>
+        </div>
+        <div class="player" id="babyDK" style="left: 56.7vw; top: 14.1vw;">
+            <h1><span class="name">Baby DK</span><br>Pitching: 3<br>Batting: 6<br>Fielding: 8<br>Running: 4<br><span class="info">Clamber</span></h1>
+        </div>
+        <div class="player" id="toad" style="left: 63.8vw; top: 14.1vw;">
+            <h1><span class="name">Toad</span><br>Pitching: 5<br>Batting: 5<br>Fielding: 3<br>Running: 7<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="toadette" style="left: 7vw; top: 21.2vw;">
+            <h1><span class="name">Toadette</span><br>Pitching: 5<br>Batting: 3<br>Fielding: 4<br>Running: 8<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="toadsworth" style="left: 14.1vw; top: 21.2vw;">
+            <h1><span class="name">Toadsworth</span><br>Pitching: 7<br>Batting: 3<br>Fielding: 7<br>Running: 3<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="bluePianta" style="left: 21.2vw; top: 21.2vw;">
+            <h1><span class="name">Blue Pianta</span><br>Pitching: 5<br>Batting: 8<br>Fielding: 4<br>Running: 2<br><span class="info">Laser Beam</span></h1>
+        </div>
+        <div class="player" id="blueNoki" style="left: 28.3vw; top: 21.2vw;">
+            <h1><span class="name">Blue Noki</span><br>Pitching: 5<br>Batting: 4<br>Fielding: 4<br>Running: 7<br><span class="info">Ball Dash</span></h1>
+        </div>
+        <div class="player" id="dixieKong" style="left: 35.4vw; top: 21.2vw;">
+            <h1><span class="name">Dixie Kong</span><br>Pitching: 3<br>Batting: 3<br>Fielding: 8<br>Running: 7<br><span class="info">Clamber</span></h1>
+        </div>
+        <div class="player" id="funkyKong" style="left: 42.5vw; top: 21.2vw;">
+            <h1><span class="name">Funky Kong</span><br>Pitching: 4<br>Batting: 8<br>Fielding: 6<br>Running: 3<br><span class="info">Clamber</span></h1>
+        </div>
+        <div class="player" id="tinyKong" style="left: 49.6vw; top: 21.2vw;">
+            <h1><span class="name">Tiny Kong</span><br>Pitching: 5<br>Batting: 5<br>Fielding: 7<br>Running: 5<br><span class="info">Clamber</span></h1>
+        </div>
+        <div class="player" id="kingKRool" style="left: 56.7vw; top: 21.2vw;">
+            <h1><span class="name">K. Rool</span><br>Pitching: 6<br>Batting: 10<br>Fielding: 2<br>Running: 1<br><span class="info">Laser Beam</span></h1>
+        </div>
+        <div class="player" id="kritter" style="left: 63.8vw; top: 21.2vw;">
+            <h1><span class="name">Kritter</span><br>Pitching: 4<br>Batting: 7<br>Fielding: 7<br>Running: 3<br><span class="info">Keeper Catch</span></h1>
+        </div>
+        <div class="player" id="goomba" style="left: 7vw; top: 28.3vw;">
+            <h1><span class="name">Goomba</span><br>Pitching: 6<br>Batting: 3<br>Fielding: 6<br>Running: 4<br><span class="info">Ball Dash</span></h1>
+        </div>
+        <div class="player" id="paragoomba" style="left: 14.1vw; top: 28.3vw;">
+            <h1><span class="name">Paragoomba</span><br>Pitching: 6<br>Batting: 3<br>Fielding: 7<br>Running: 5<br><span class="info">Super Jump</span></h1>
+        </div>
+        <div class="player" id="greenKoopa" style="left: 21.2vw; top: 28.3vw;">
+            <h1><span class="name">Green Koopa</span><br>Pitching: 3<br>Batting: 6<br>Fielding: 4<br>Running: 6<br><span class="info">Spin Attack</span></h1>
+        </div>
+        <div class="player" id="redParatroopa" style="left: 28.3vw; top: 28.3vw;">
+            <h1><span class="name">R. Paratroopa</span><br>Pitching: 4<br>Batting: 4<br>Fielding: 7<br>Running: 5<br><span class="info">Super Jump</span></h1>
+        </div>
+        <div class="player" id="magikoopa" style="left: 35.4vw; top: 28.3vw;">
+            <h1><span class="name">Magikoopa</span><br>Pitching: 8<br>Batting: 2<br>Fielding: 8<br>Running: 2<br><span class="info">Magical Catch</span></h1>
+        </div>
+        <div class="player" id="hammerBro" style="left: 42.5vw; top: 28.3vw;">
+            <h1><span class="name">Hammer Bro</span><br>Pitching: 4<br>Batting: 7<br>Fielding: 6<br>Running: 3<br><span class="info">Hammer Throw</span></h1>
+        </div>
+        <div class="player" id="dryBones" style="left: 49.6vw; top: 28.3vw;">
+            <h1><span class="name">Dry Bones</span><br>Pitching: 4<br>Batting: 7<br>Fielding: 4<br>Running: 5<br><span class="info">Scatter Dive</span></h1>
+        </div>
+        <div class="player" id="boo" style="left: 56.7vw; top: 28.3vw;">
+            <h1><span class="name">Boo</span><br>Pitching: 9<br>Batting: 3<br>Fielding: 3<br>Running: 5<br><span class="info">Teleport</span></h1>
+        </div>
+        <div class="player" id="kingBoo" style="left: 63.8vw; top: 28.3vw;">
+            <h1><span class="name">King Boo</span><br>Pitching: 7<br>Batting: 7<br>Fielding: 3<br>Running: 4<br><span class="info">Teleport</span></h1>
+        </div>
+        <div class="player" id="peteyPiranha" style="left: 7vw; top: 35.4vw;">
+            <h1><span class="name">Petey</span><br>Pitching: 4<br>Batting: 10<br>Fielding: 5<br>Running: 2<br><span class="info">Piranha Catch</span></h1>
+        </div>
+        <div class="player" id="wiggler" style="left: 14.1vw; top: 35.4vw;">
+            <h1><span class="name">Wiggler</span><br>Pitching: 3<br>Batting: 7<br>Fielding: 4<br>Running: 7<br><span class="info">Angry Attack</span></h1>
+        </div>
+        <div class="player" id="shyGuy" style="left: 21.2vw; top: 35.4vw;">
+            <h1><span class="name">Shy Guy</span><br>Pitching: 4<br>Batting: 5<br>Fielding: 7<br>Running: 4<br><span class="info">Super Dive</span></h1>
+        </div>
+        <div class="player" id="montyMole" style="left: 28.3vw; top: 35.4vw;">
+            <h1><span class="name">Monty Mole</span><br>Pitching: 4<br>Batting: 4<br>Fielding: 5<br>Running: 7<br><span class="info">Burrow</span></h1>
+        </div>
+        <div class="player" id="blooper" style="left: 35.4vw; top: 35.4vw;">
+            <h1><span class="name">Blooper</span><br>Pitching: 6<br>Batting: 4<br>Fielding: 5<br>Running: 6<br><span class="info">Ink Dive</span></h1>
+        </div>
+        <div class="player" id="redYoshi" style="left: 42.5vw; top: 35.4vw;">
+            <h1><span class="name">Red Yoshi</span><br>Pitching: 3<br>Batting: 4<br>Fielding: 4<br>Running: 8<br><span class="info">Tongue Catch</span></h1>
+        </div>
+        <div class="player" id="blueYoshi" style="left: 49.6vw; top: 35.4vw;">
+            <h1><span class="name">Blue Yoshi</span><br>Pitching: 4<br>Batting: 2<br>Fielding: 6<br>Running: 8<br><span class="info">Tongue Catch</span></h1>
+        </div>
+        <div class="player" id="yellowYoshi" style="left: 56.7vw; top: 35.4vw;">
+            <h1><span class="name">Yellow Yoshi</span><br>Pitching: 3<br>Batting: 4<br>Fielding: 6<br>Running: 7<br><span class="info">Tongue Catch</span></h1>
+        </div>
+        <div class="player" id="lightBlueYoshi" style="left: 63.8vw; top: 35.4vw;">
+            <h1><span class="name">L.B. Yoshi</span><br>Pitching: 3<br>Batting: 3<br>Fielding: 6<br>Running: 8<br><span class="info">Tongue Catch</span></h1>
+        </div>
+        <div class="player" id="pinkYoshi" style="left: 7vw; top: 42.5vw;">
+            <h1><span class="name">Pink Yoshi</span><br>Pitching: 2<br>Batting: 3<br>Fielding: 6<br>Running: 9<br><span class="info">Tongue Catch</span></h1>
+        </div>
+        <div class="player" id="blueToad" style="left: 14.1vw; top: 42.5vw;">
+            <h1><span class="name">Blue Toad</span><br>Pitching: 4<br>Batting: 6<br>Fielding: 3<br>Running: 7<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="yellowToad" style="left: 21.2vw; top: 42.5vw;">
+            <h1><span class="name">Yellow Toad</span><br>Pitching: 3<br>Batting: 6<br>Fielding: 4<br>Running: 7<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="greenToad" style="left: 28.3vw; top: 42.5vw;">
+            <h1><span class="name">Green Toad</span><br>Pitching: 4<br>Batting: 5<br>Fielding: 4<br>Running: 7<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="purpleToad" style="left: 35.4vw; top: 42.5vw;">
+            <h1><span class="name">Purple Toad</span><br>Pitching: 5<br>Batting: 6<br>Fielding: 2<br>Running: 7<br><span class="info">Enlarge</span></h1>
+        </div>
+        <div class="player" id="redPianta" style="left: 42.5vw; top: 42.5vw;">
+            <h1><span class="name">Red Pianta</span><br>Pitching: 4<br>Batting: 8<br>Fielding: 4<br>Running: 2<br><span class="info">Laser Beam</span></h1>
+        </div>
+        <div class="player" id="yellowPianta" style="left: 49.6vw; top: 42.5vw;">
+            <h1><span class="name">Yellow Pianta</span><br>Pitching: 4<br>Batting: 8<br>Fielding: 4<br>Running: 2<br><span class="info">Laser Beam</span></h1>
+        </div>
+        <div class="player" id="redNoki" style="left: 56.7vw; top: 42.5vw;">
+            <h1><span class="name">Red Noki</span><br>Pitching: 4<br>Batting: 4<br>Fielding: 5<br>Running: 7<br><span class="info">Ball Dash</span></h1>
+        </div>
+        <div class="player" id="greenNoki" style="left: 63.8vw; top: 42.5vw;">
+            <h1><span class="name">Green Noki</span><br>Pitching: 4<br>Batting: 5<br>Fielding: 4<br>Running: 7<br><span class="info">Ball Dash</span></h1>
+        </div>
+        <div class="player" id="blueKritter" style="left: 7vw; top: 49.6vw;">
+            <h1><span class="name">Blue Kritter</span><br>Pitching: 5<br>Batting: 6<br>Fielding: 7<br>Running: 3<br><span class="info">Keeper Catch</span></h1>
+        </div>
+        <div class="player" id="redKritter" style="left: 14.1vw; top: 49.6vw;">
+            <h1><span class="name">Red Kritter</span><br>Pitching: 3<br>Batting: 8<br>Fielding: 7<br>Running: 3<br><span class="info">Keeper Catch</span></h1>
+        </div>
+        <div class="player" id="brownKritter" style="left: 21.2vw; top: 49.6vw;">
+            <h1><span class="name">Brown Kritter</span><br>Pitching: 3<br>Batting: 7<br>Fielding: 7<br>Running: 4<br><span class="info">Keeper Catch</span></h1>
+        </div>
+        <div class="player" id="redKoopa" style="left: 28.3vw; top: 49.6vw;">
+            <h1><span class="name">Red Koopa</span><br>Pitching: 4<br>Batting: 6<br>Fielding: 3<br>Running: 6<br><span class="info">Spin Attack</span></h1>
+        </div>
+        <div class="player" id="greenParatroopa" style="left: 35.4vw; top: 49.6vw;">
+            <h1><span class="name">G. Paratroopa</span><br>Pitching: 3<br>Batting: 5<br>Fielding: 7<br>Running: 5<br><span class="info">Super Jump</span></h1>
+        </div>
+        <div class="player" id="redMagikoopa" style="left: 42.5vw; top: 49.6vw;">
+            <h1><span class="name">R. Magikoopa</span><br>Pitching: 8<br>Batting: 3<br>Fielding: 8<br>Running: 1<br><span class="info">Magical Cathc</span></h1>
+        </div>
+        <div class="player" id="greenMagikoopa" style="left: 49.6vw; top: 49.6vw;">
+            <h1><span class="name">Gr. Magikoopa</span><br>Pitching: 7<br>Batting: 2<br>Fielding: 8<br>Running: 2<br><span class="info">Magical Catch</span></h1>
+        </div>
+        <div class="player" id="yellowMagikoopa" style="left: 56.7vw; top: 49.6vw;">
+            <h1><span class="name">Y. Magikoopa</span><br>Pitching: 7<br>Batting: 3<br>Fielding: 8<br>Running: 2<br><span class="info">Magical Catch</span></h1>
+        </div>
+        <div class="player" id="fireBro" style="left: 63.8vw; top: 49.6vw;">
+            <h1><span class="name">Fire Bro</span><br>Pitching: 3<br>Batting: 8<br>Fielding: 6<br>Running: 3<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="boomerangBro" style="left: 7vw; top: 56.7vw;">
+            <h1><span class="name">Boom. Bro</span><br>Pitching: 5<br>Batting: 7<br>Fielding: 5<br>Running: 3<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="greenDryBones" style="left: 14.1vw; top: 56.7vw;">
+            <h1><span class="name">Gr. Dry Bones</span><br>Pitching: 3<br>Batting: 7<br>Fielding: 4<br>Running: 6<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="darkBones" style="left: 21.2vw; top: 56.7vw;">
+            <h1><span class="name">Dark Bones</span><br>Pitching: 5<br>Batting: 7<br>Fielding: 4<br>Running: 5<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="blueDryBones" style="left: 28.3vw; top: 56.7vw;">
+            <h1><span class="name">B. Dry Bones</span><br>Pitching: 3<br>Batting: 7<br>Fielding: 5<br>Running: 5<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="blueShyGuy" style="left: 35.4vw; top: 56.7vw;">
+            <h1><span class="name">B. Shy Guy</span><br>Pitching: 5<br>Batting: 4<br>Fielding: 7<br>Running: 4<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="yellowShyGuy" style="left: 42.5vw; top: 56.7vw;">
+            <h1><span class="name">Y. Shy Guy</span><br>Pitching: 4<br>Batting: 4<br>Fielding: 7<br>Running: 5<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="greenShyGuy" style="left: 49.6vw; top: 56.7vw;">
+            <h1><span class="name">Gr. Shy Guy</span><br>Pitching: 3<br>Batting: 5<br>Fielding: 7<br>Running: 5<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="grayShyGuy" style="left: 56.7vw; top: 56.7vw;">
+            <h1><span class="name">Gray Shy Guy</span><br>Pitching: 4<br>Batting: 4<br>Fielding: 8<br>Running: 4<br><span class="info"></span></h1>
+        </div>
+        <div class="player" id="mii" style="left: 63.8vw; top: 56.7vw;">
+            <h1><span class="name">Mii</span><br>Pitching: 6<br>Batting: 6<br>Fielding: 6<br>Running: 6<br><span class="info"></span></h1>
+        </div>
+
+        <div class="teamButtonPage" style="left: 73vw; top: 5vw">
+            <button class="teamButtons" id="team1Button">Team 1</button>
+            <button class="teamButtons" id="team2Button">Team 2</button>
+            <button class="teamButtons" id="team3Button">Team 3</button>
+            <button class="teamButtons" id="team4Button">Team 4</button>
+            <button class="teamButtons" id="team5Button">Team 5</button>
+            <button class="teamButtons" id="team6Button">Team 6</button>
+            <button class="teamButtons" id="team7Button">Team 7</button>
+            <button class="teamButtons" id="team8Button">Team 8</button>
+        </div>
+
+        <div class="teamDrafts" id="team1Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 1</h1>
+            <div class="totals" id="total1">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="one" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove1" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team2Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 2</h1>
+            <div class="totals" id="total2">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="two" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove2" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team3Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 3</h1>
+            <div class="totals" id="total3">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="three" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove3" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team4Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 4</h1>
+            <div class="totals" id="total4">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="four" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove4" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team5Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 5</h1>
+            <div class="totals" id="total5">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="five" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove5" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team6Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 6</h1>
+            <div class="totals" id="total6">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="six" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove6" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team7Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 7</h1>
+            <div class="totals" id="total7">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="seven" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove7" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        <div class="teamDrafts" id="team8Draft" style="left: 75vw; top: 20vw">
+            <h1>Team 8</h1>
+            <div class="totals" id="total8">Players: 0<br>Pitching: 0<br>Batting: 0<br>Fielding: 0<br>Running: 0<br>Composite: 0<br>Chemistry Score: 0</div>
+            <div class="list" id="eight" style="left: 1vw; top: 12vw"><span>Squad:<br></span></div>
+            <button class="remove" id="remove8" style="left: 8.25vw; top: 28vw">Undo</button>
+        </div>
+        
+        <script src="./app.js"></script>
+    </body>
+</html>
