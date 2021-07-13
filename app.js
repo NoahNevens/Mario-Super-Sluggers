@@ -132,7 +132,7 @@ let data = [
         fielding: 5,
         running: 6,
         toggle: false,
-        chemistry: ["Baby Mario", "Baby Daisy", "Yoshi", "Red Yoshi", "Toad", "Blue Yoshi", "Pink Yoshi", "L.B. Yoshi", "Yellow Yoshi", "Baby Luigi", "Baby DK", "Toadette", "Toadsworth"]
+        chemistry: ["Baby Mario", "Baby Daisy", "Yoshi", "Red Yoshi", "Toad", "Green Toad", "Yellow Toad", "Purple Toad", "Blue Toad", "Blue Yoshi", "Pink Yoshi", "L.B. Yoshi", "Yellow Yoshi", "Baby Luigi", "Baby DK", "Toadette", "Toadsworth"]
     },
     {
         name: "Baby Daisy",
