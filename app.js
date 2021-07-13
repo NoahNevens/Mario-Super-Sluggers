@@ -660,7 +660,7 @@ var lists = ["#one", "#two", "#three", "#four", "#five", "#six", "#seven", "#eig
 var totals = ["#total1", "#total2", "#total3", "#total4", "#total5", "#total6", "#total7", "#total8"];
 
 var chemScore = [0, 0, 0, 0, 0, 0, 0, 0];
-var teamPlayers = [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]];
+var teamPlayers = [[-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1, -1, -1]];
 
 $("#team1Button").on("click", function(event) {
     event.preventDefault();
@@ -781,6 +781,7 @@ $(".remove").on("click", function(event) {
             }
         })
     }
+    teamPlayers[currentTeam - 1] = [-1, -1, -1, -1, -1, -1, -1, -1];
 })
 
 var chemCalc = function(team) {
