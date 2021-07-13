@@ -660,7 +660,7 @@ var lists = ["#one", "#two", "#three", "#four", "#five", "#six", "#seven", "#eig
 var totals = ["#total1", "#total2", "#total3", "#total4", "#total5", "#total6", "#total7", "#total8"];
 
 var chemScore = [0, 0, 0, 0, 0, 0, 0, 0];
-var teamPlayers = [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]];
+var teamPlayers = [[100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100], [100, 100, 100, 100, 100, 100, 100, 100]];
 
 $("#team1Button").on("click", function(event) {
     event.preventDefault();
@@ -769,7 +769,7 @@ $(".remove").on("click", function(event) {
     runningTotal[currentTeam - 1] = 0;
     chemScore[currentTeam - 1] = 0;
     totalTotal[currentTeam - 1] = 0;
-    teamPlayers[currentTeam - 1] = [0, 0, 0, 0, 0, 0, 0, 0];
+    teamPlayers[currentTeam - 1] = [100, 100, 100, 100, 100, 100, 100, 100];
     $(totals[currentTeam - 1]).append("Players: " + playerCount[currentTeam - 1] + "<br>" + "Pitching: " + pitchingTotal[currentTeam - 1] + "<br>" + "Batting: " + battingTotal[currentTeam - 1] + "<br>" + "Fielding: " + fieldingTotal[currentTeam - 1] + "<br>" + "Running: " + runningTotal[currentTeam - 1] + "<br>" + "Composite: " + totalTotal[currentTeam - 1] + "<br>" + "Chemistry Score: " + chemScore[currentTeam - 1]);
     for (var i = 0; i < teamPlayers[currentTeam - 1].length; i++) {
         var index = teamPlayers[currentTeam - 1][i];
