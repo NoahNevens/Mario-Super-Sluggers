@@ -54,7 +54,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1170px) {
     .teamButtons {
         width: 2vw;
         height: 2.5vw;
