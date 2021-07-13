@@ -54,7 +54,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1275px) {
     .teamButtons {
         width: 2vw;
         height: 2.5vw;
@@ -404,7 +404,7 @@ body {
 
 #redYoshi {
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://www.kindpng.com/picc/m/24-243591_super-mario-png-red-yoshi-transparent-png.png);
-    background-size: 95% 95%;
+    background-size: 110% 95%;
 }
 
 #blueYoshi {
