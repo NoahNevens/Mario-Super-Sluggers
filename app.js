@@ -723,7 +723,7 @@ $(".player").on("click", function(event) {
     var index = $(".player").index(this);
     if (data[index].toggle === false) {
         $(lists[currentTeam - 1]).append(data[index].name + "<br>");
-        teamPlayers[currentTeam - 1].push(index);
+        teamPlayers[currentTeam - 1][playerCount[currentTeam - 1]] = index;
         playerCount[currentTeam - 1]++;
         $(this).css("opacity", "0.25");
         $(totals[currentTeam - 1]).empty();
@@ -769,7 +769,6 @@ $(".remove").on("click", function(event) {
     runningTotal[currentTeam - 1] = 0;
     chemScore[currentTeam - 1] = 0;
     totalTotal[currentTeam - 1] = 0;
-    teamPlayers[currentTeam - 1] = [63, 63, 63, 63, 63, 63, 63, 63];
     $(totals[currentTeam - 1]).append("Players: " + playerCount[currentTeam - 1] + "<br>" + "Pitching: " + pitchingTotal[currentTeam - 1] + "<br>" + "Batting: " + battingTotal[currentTeam - 1] + "<br>" + "Fielding: " + fieldingTotal[currentTeam - 1] + "<br>" + "Running: " + runningTotal[currentTeam - 1] + "<br>" + "Composite: " + totalTotal[currentTeam - 1] + "<br>" + "Chemistry Score: " + chemScore[currentTeam - 1]);
     for (var i = 0; i < teamPlayers[currentTeam - 1].length; i++) {
         var index = teamPlayers[currentTeam - 1][i];
@@ -782,6 +781,7 @@ $(".remove").on("click", function(event) {
             }
         })
     }
+    teamPlayers[currentTeam - 1] = [63, 63, 63, 63, 63, 63, 63, 63];
 })
 
 var chemCalc = function(team) {
