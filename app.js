@@ -375,7 +375,7 @@ let data = [
         fielding: 4,
         running: 8,
         toggle: false,
-        chemistry: ["Mario", "Daisy", "Baby Daisy", "Baby Peach", "Baby Mario", "Baby Luigi", "Baby DK", "Birdo"]
+        chemistry: ["Mario", "Baby Daisy", "Baby Peach", "Baby Mario", "Baby Luigi", "Baby DK", "Birdo"]
     },
     {
         name: "Blue Yoshi",
